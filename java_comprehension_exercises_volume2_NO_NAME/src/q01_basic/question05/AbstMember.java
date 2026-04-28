@@ -10,7 +10,11 @@ abstract class AbstMember {
 	/**
 	 * name protected access
 	 */
+	protected int id;
 	protected String name;
+	private String password;
+    private int age;
+    private int rank;
 
 	/**
 	 * 商品を購入する（メッセージ出力）
@@ -28,6 +32,12 @@ abstract class AbstMember {
 	/**
 	 * @return name
 	 */
+	public int getID() {
+		return id;
+	}
+	public void SetID() {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
@@ -38,5 +48,7 @@ abstract class AbstMember {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	
 
 }

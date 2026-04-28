@@ -10,6 +10,8 @@ abstract class AbstMember {
 	/**
 	 * name protected access
 	 */
+	
+	
 	protected String name;
 
 	/**
