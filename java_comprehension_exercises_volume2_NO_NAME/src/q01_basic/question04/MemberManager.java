@@ -1,25 +1,20 @@
 package q01_basic.question04;
 
-class MemberManager {
+public class MemberManager {
 
-	/**
-	 * インスタンス化の禁止
-	 */
-	private MemberManager() {
-		
-	}
-	
-	public static void showAllMembers(Member[]members) {
-		for (Member member : members) {
-			if (member !=null) {
-				member.showMember();
-				
-				
-			}
-			
-		}
-	}
+    // コンストラクタをprivateにしてインスタンス化を禁止（ユーティリティクラス）
+    private MemberManager() {
+    }
 
-	//TODO showAllMembersメソッドを実装する
-
+    /**
+     * 6. Member配列の内容を順に表示するstaticメソッド
+     * @param members Memberオブジェクトの配列
+     */
+    public static void showAllMembers(Member[] members) {
+        for (Member member : members) {
+            if (member != null) {
+                member.showMember();
+            }
+        }
+    }
 }

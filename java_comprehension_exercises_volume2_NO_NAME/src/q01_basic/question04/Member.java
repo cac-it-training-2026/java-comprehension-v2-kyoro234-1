@@ -1,36 +1,50 @@
 package q01_basic.question04;
 
-class Member {
-	//TODO ここから実装する
-    private String id;
-	private String password;
+
+
+public class Member {
+    private int id;          // 初期値は 0
+    private String password; // 初期値は null (何も代入しない)
     private String name;
     private int age;
     private int rank;
-    
- public Member() {
-    	
-    	
+
+    // デフォルトコンストラクタ
+    public Member() {
+        // ここで password = "" などと書かないこと
     }
-    public Member (String id,String password, String name,int age,int rank) {
-    	this.id = id;
-    	this.password = password;
-    	this.name = name;
-    	this.age = age;
-    	this.rank = rank;
+    // 4. 全フィールドを初期化するコンストラクタ
+    public Member(int id, String password, String name, int age, int rank) {
+        this.id = id;
+        this.password = password;
+        this.name = name;
+        this.age = age;
+        this.rank = rank;
     }
-    public String getId() {
-        return name;
+
+    // 5. showMember メソッド
+    public void showMember() {
+        System.out.println("ID: " + id + ", パスワード: " + password + 
+                           ", 名前: " + name + ", 年齢: " + age + ", ランク: " + rank);
     }
-    public void setId(String id) {
+
+    // 2. getter / setter
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
         this.id = id;
     }
+
     public String getPassword() {
-        return name;
+        return password;
     }
+
     public void setPassword(String password) {
         this.password = password;
     }
+
     public String getName() {
         return name;
     }
@@ -54,15 +68,4 @@ class Member {
     public void setRank(int rank) {
         this.rank = rank;
     }
-    
-    public void showMember() {
-    	System.out.println("ID：" + id);
-    	System.out.println("パスワード：" + password);
-    	System.out.println("名前：" + name);
-    	 System.out.println("年齢：" + age);
-	        System.out.println("ランク：" + rank);
-
 }
-}
-
- 
