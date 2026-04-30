@@ -15,14 +15,16 @@ class ConsoleReader {
 	 * @return 入力文字列
 	 * @throws IOException
 	 */
-	public String inputString() throws IOException {
-		//TODO ここから実装する
+			
+		private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		br.readLine();
+		public String inputString() throws IOException {
+			//TODO ここから実装する
+			String line = br.readLine();
+			return(line==null)?"":line;
 		
 
-		return "";
+		
 	}
 
 	/**
@@ -35,6 +37,7 @@ class ConsoleReader {
 	public int inputNumber() throws IOException, NumberFormatException {
 		//TODO ここから実装する
 		String input = inputString();
+		int number =Integer.parseInt(input);
 		return 0;
 
 	}
