@@ -54,6 +54,11 @@ public class MemberTest01 {
 	private static void testBasicMemberInfo() {
 		System.out.println("\n▶ テストケース1: 基本的なメンバー情報の設定と取得");
 
+		
+			
+				
+			
+		
 		// テスト対象のインスタンスを作成
 		Member member = new Member();
 
@@ -70,7 +75,7 @@ public class MemberTest01 {
 		// showMemberメソッドの動作確認（出力のみ、自動検証はなし）
 		System.out.println("showMemberメソッドの出力結果:");
 		member.showMember();
-	}
+		}
 
 	/**
 	 * テストケース2: 異なる値での検証

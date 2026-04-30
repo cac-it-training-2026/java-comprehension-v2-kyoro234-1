@@ -5,11 +5,13 @@ package q01_basic.question06;
  * Memberクラス、NonMemberクラスに継承する
  * 
  */
-abstract class AbstMember {
+public abstract class AbstMember {
 
 	/**
 	 * name protected access
 	 */
+	
+	
 	protected String name;
 
 	/**
@@ -31,6 +33,8 @@ abstract class AbstMember {
 	public String getName() {
 		return name;
 	}
+	
+	
 
 	/**
 	 * @param name セットする name
@@ -38,5 +42,7 @@ abstract class AbstMember {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	
 
 }
